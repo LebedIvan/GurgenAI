@@ -1,26 +1,63 @@
-#app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#chatContainer {
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#gurgen {
-    width: 150px; /* Размер может быть изменен */
-}
-
-#gurgenMessage, #userMessage {
-    border: 1px solid black;
-    width: 300px;
-    min-height: 50px;
+#chatWindow {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    overflow-y: auto;
     padding: 10px;
-    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse; /* Новые сообщения будут добавляться сверху */
+}
+
+.messageContainer {
+    margin-bottom: 10px;
+}
+
+.gurgenMessage, .userMessage {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.gurgenMessage {
+    background-color: #e5e5ea;
+    align-self: flex-start;
+}
+
+.userMessage {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+#inputArea {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    display: flex;
 }
 
 #userInput {
-    margin: 10px;
-    padding: 5px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
-#analyticsButton {
-    padding: 5px 10px;
+button#sendButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }

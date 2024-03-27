@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="gurgen.css">
+    <title>Гурген AI Чат</title>
 </head>
 <body>
-    <div id="app">
-        <img id="gurgen" src="C:\Users\ionel\Desktop\GurgenAI\GurgenAI.jpg" alt="Гурген">
-        <div id="gurgenMessage">Привет, я торговый робот Гурген! Я гений трейдинга и бог фифы. 
-            <br>Я потерял 5 миллионов рублей, но сделал из 5 долларов 400. Я помогу перестать быть РАБОМ.</div>
-        <button id="analyticsButton">ANALитика</button>
+    <div id="chatContainer">
+        <div id="chatWindow">
+            <div id="gurgenMessages" class="messageContainer"></div>
+            <div id="userMessages" class="messageContainer"></div>
+        </div>
+        <div id="inputArea">
+            <input type="text" id="userInput" placeholder="Напишите что-то..." />
+            <button id="sendButton">Получить ANALитику</button>
+        </div>
     </div>
     <script src="gurgen.js"></script>
 </body>
