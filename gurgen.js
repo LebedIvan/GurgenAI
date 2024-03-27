@@ -1,6 +1,3 @@
-const analyticsButton = document.getElementById('analyticsButton');
-const gurgenMessage = document.getElementById('gurgenMessage');
-
 const coins = [
     "Bitcoin", 
     "Ethereum", 
